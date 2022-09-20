@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+li { list-style: none; line-height: 1; }
+a { text-decoration: none; color: inherit; }
+
+
+
+/* 헤더 */
+header { width: 100%; height: 80px; color: #fff; background-color: rgba(0, 0, 0, 0.349);
+    position: absolute; top: 0; left: 0; z-index: 9; text-align: center; line-height: 100px;}
+
+header  nav { width: 1440px; height: 100%; display: flex; align-items: center;  margin: 0 auto; justify-content: space-between;}
+header .h01 { }
+header .h02 { display: flex; }
+header .h02 li {padding-left: 100px; }
+
+
+/* 메인 */
+.section .intro  > h1 {  align-items: center; font-family: 'GmarketSansMedium'; font-weight: 700px; font-size: 120px;
+        position:absolute; right:500px; /* width:100px; height:50px;  */margin-left:-500px; margin-top:-150px;
+        /* 애니메이션 이름 */
+        animation-name:jaehee; animation-duration:2s; /* animation-iteration-count:3;  */animation-direction:alternate; animation-fill-mode: forwards; }
+
+@-webkit-keyframes jaehee { 0% { left:-240px; } 100% { left:700px; } }
+
+/* .section .intro > p { font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 30px; } */
+
+.section .intro  > p { font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 30px;
+    position:absolute; right:500px; /* width:100px; height:50px; */ margin-left:-500px; margin-top:150px;
+    /* 애니메이션 이름 */
+    animation-name:jaehee; animation-duration:2.5s; /* animation-iteration-count:3;  */animation-direction:alternate; animation-fill-mode: forwards; }
+
+@-webkit-keyframes jaehee { 0% { left:-350px; } 100% { left:700px; } }
+
+
+/* 나의 소개 */
+
+#section4 {  height: 100%; margin: 0 auto;}
+.s04text { width: 1440px;}
+#section4 .s04text { display: flex; justify-content: space-between;}
+#section4 .s04text div>h1 { font-family: 'GmarketSansBold'; font-weight: 700px; font-size: 35px; border-bottom: solid 2px #ff4444; padding-bottom: 10px; }
+
+#section4 .s04text div>p {font-family: 'GmarketSansLight'; font-weight: 200px; }
+#section4 div img { box-shadow: 20px 20px #ff44447c;  }
+
+
+/* 푸터 */
+
+.size { width: 1440px; height: 100%; margin: 120px auto; text-align: center; }
+.size .ft01 { width:55%; display: flex; margin: 0 auto; justify-content: space-between;}
+.size .ft01 div { padding: 0 20px; border-bottom: solid 1px #ff4444; padding-bottom: 20px;  }
+.size .ft01 div h3 { padding: 15px 0; }
+.size p {padding: 20px 0; }

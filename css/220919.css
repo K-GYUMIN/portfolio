@@ -69,11 +69,12 @@ header .h02 li {padding-left: 100px; }
 #section2 .s2all .s2text  p { font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 20px; padding: 20px 0; line-height:1.5; }
 #section2 .s2all .s2text  ul { display: flex; margin: 10px 0; }
 #section2 .s2all .s2text  ul li strong { font-family: 'GmarketSansMedium'; font-weight: 500px; font-size: 18px; padding-right: 15px;  }
+#section2 .s2all .s2text  ul li{ font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 17px;  }
 #section2 .s2all .but ul { display: flex; margin-top: 30px;}
-#section2 .s2all .but ul li {  margin-right: 20px; padding: 20px 20px; background-color: #ccc; border-radius: 25px; }
+#section2 .s2all .but ul li {font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 18px;  margin-right: 20px; padding: 20px 20px; background-color: #ccc; border-radius: 25px; }
 #section2 .s2all .but ul li a {padding: 20px 20px;}
 
-#section2 .s2all .but ul li:hover {  margin-right: 20px; padding: 20px 20px; background-color: #ff4444; border-radius: 25px; }
+#section2 .s2all .but ul li:hover {  margin-right: 20px; padding: 20px 20px; background-color: #ff4444; border-radius: 25px; color: white;}
 
 
 #section2 #slide2 .s2all2 {height: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
@@ -83,11 +84,12 @@ header .h02 li {padding-left: 100px; }
 #section2 #slide2 .s2all2 .s2text2  p { font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 20px; padding: 20px 0; line-height:1.5; }
 #section2 #slide2 .s2all2 .s2text2  ul { display: flex; margin: 10px 0; }
 #section2 #slide2 .s2all2 .s2text2  ul li strong { font-family: 'GmarketSansMedium'; font-weight: 500px; font-size: 18px; padding-right: 15px;  }
+#section2 #slide2 .s2all2 .s2text2  ul li{ font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 17px;  }
 #section2 #slide2 .s2all2 .but2 ul { display: flex; margin-top: 30px;}
-#section2 #slide2 .s2all2 .but2 ul li {  margin-right: 20px; padding: 20px 20px; background-color: #ccc; border-radius: 25px; }
+#section2 #slide2 .s2all2 .but2 ul li { font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 18px;  margin-right: 20px; padding: 20px 20px; background-color: #ccc; border-radius: 25px; }
 #section2 #slide2 .s2all2 .but2 ul li a {padding: 20px 20px;}
 
-#section2 #slide2 .s2all2 .but2 ul li:hover {  margin-right: 20px; padding: 20px 20px; background-color: #ff4444; border-radius: 25px; }
+#section2 #slide2 .s2all2 .but2 ul li:hover {  margin-right: 20px; padding: 20px 20px; background-color: #ff4444; border-radius: 25px; color: white; }
 
 
 

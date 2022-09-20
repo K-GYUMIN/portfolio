@@ -1,0 +1,533 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+a { color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    line-height: 1;
+}
+
+header {
+    width: 100%;
+    color: white;
+    /* 배경 위로 헤더 올리고 싶니?
+    그냥 포지션 앱솔루트 + 넓이 100%만 주렴 ^^ */
+   z-index: 9;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+position: absolute; }
+
+
+header .logobox {
+   /*  width: 1440px; */
+    height: 92px;
+    margin: 0 auto;
+    position: absolute;
+    left: 49.5%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .logobox h1 {
+    width: 100%;
+    height: 100%;
+    margin: 25px auto;
+   }
+
+header .logobox a {
+    height: 100%;
+    width: 100%; }
+
+
+header nav {
+    height: 100%;
+    margin: 33px auto;
+    text-align: left;
+    
+}
+
+header nav ul {
+display: flex; }
+
+header nav ul li {
+    padding: 10px; }
+
+header nav > ul .cont01 .menu01 {
+    color: rgb(255, 255, 255);
+   /*  background-color:#ffffff ; */
+    padding: 30px 0 ;
+    display: none;
+    line-height: 2;
+    position: relative;
+}
+
+header nav > ul .cont01:hover .menu01 {
+    display: block;
+    position: absolute;
+}
+
+header nav ul li:nth-of-type(4) {
+    margin-right: 230px;
+    
+}
+
+
+
+/* main */
+
+        /* 슬라이드 초기값 */
+        .swiper {
+            
+            width: 100%;
+            height: 100%;
+          }
+    
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+    
+          .swiper-slide img {
+            
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    
+          /* .main_visual */
+          .main_visual {
+            height: 100%;
+            width: 100%;
+          }
+          .main_visual .main_v .info {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+          }
+       
+          .main_visual .swiper-pagination {
+            --swiper-theme-color: #00aeef;
+          }
+
+
+
+
+/* 검색창 */
+.cont03 {  margin-bottom: 100px; margin-top: 100px; }
+.icon {
+   
+    height: 379px;
+    margin: 0 auto;
+
+}
+
+.icon .icon_list {
+  position: relative;
+ 
+}
+
+.icon .icon_list .up_icon {
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.icon .icon_list .up_icon > div {
+    padding: 15px;
+    margin: 23px;
+    border: solid 0.3px #58585d;
+    border-radius: 8px; }
+
+.icon .icon_list .up_icon > p {
+    font-size: 16px;   
+}
+
+.icon .icon_list .up_icon > div:hover {
+    background-color:#47ceff ;
+    border: rgba(255, 255, 255, 0);
+}
+
+
+.icon .icon_sh {
+    position: relative;
+}
+
+.icon .icon_sh > div {
+align-items: center;
+position: absolute;
+top: 220px;
+transform: translateX(-50%);
+left: 50%; }
+
+.icon .icon_sh > div input {
+border-radius: 10px;
+border: #58585d solid 0.3px;
+width: 381px;
+height: 67px;
+margin-right: 23px;
+
+}
+
+.icon .icon_sh > div img {
+    position: absolute;
+    left: 403px;
+    padding: 18px;
+    border-radius: 8px;
+    border: 0.3px #58585d solid;
+}
+
+.icon .icon_sh > div a:hover img {
+    background-color:#47ceff ;
+    border: rgba(255, 255, 255, 0);
+}
+
+
+/* 오늘의 영화 */
+
+.cont04 {  margin-bottom: 200px; margin-top: 100px; /* background-color: #00aeef; */ }
+
+.cont04 h3 { text-align: center; font-size: 30px;
+            margin-bottom: 43px;}
+
+.cont04 .cont04_all {height: 100%; width: 100%; text-align: center; }
+
+.cont04 .cont04_all .text04 { width: 100%; margin: 0 auto; }
+.cont04 .cont04_all .text04 .ul_01 { width: 150px;  padding-bottom: 43px; margin: 0 auto; font-size: 25px; display: flex; } 
+.cont04 .cont04_all .text04 .ul_01 li { padding-right: 25px;}
+.cont04 .cont04_all .text04 .ul_01 a:nth-of-type(2) li { color: #00aeef;}
+.cont04 .cont04_all .text04 .ul_01 a:nth-of-type(1) li { font-size: 22px; color: rgba(0, 0, 0, 0.473); }
+.cont04 .cont04_all .text04 .ul_01 a:nth-of-type(3) li { font-size: 22px; color: rgba(0, 0, 0, 0.473); }
+
+.cont04 .cont04_all .text04 .list04 { display: flex; justify-content: center; }
+.cont04 .cont04_all .text04 .list04 li {margin: 0 20px;}
+.cont04 .cont04_all .list_post { display: flex; margin-top: 46px; width: 1440px; margin: 46px auto;}
+
+.cont04 .cont04_all .list_post div {margin: 0 auto;  }
+.cont04 .cont04_all .list_post div a {font-size: 18px;}
+.cont04 .cont04_all .list_post div p {margin: 15px 0; font-size: 20px;}
+.cont04 .cont04_all .list_post div ul { display: flex; }
+.cont04 .cont04_all .list_post div ul li {width: 100%; margin: 10px; padding:10px 5px; font-size: 17px; }
+.cont04 .cont04_all .list_post div ul li:nth-child(1) {
+    background-color: rgb(255, 222, 38);
+    border-radius: 10px;
+}
+
+
+.cont04 .cont04_all .list_post div ul li:nth-child(2) {
+background-color: rgb(255, 255, 255);
+border: #58585d solid 0.3px;
+border-radius: 10px;
+}
+
+.cont04 .cont04_all .list_post div ul li:nth-child(2):hover {
+    background-color: rgb(128, 128, 128);
+    color: white;
+    
+}
+.cont04 .cont04_all .list_post div ul a {}
+
+
+
+/* 전시&공연 */
+
+ .cont05 {
+    margin-bottom: 200px; margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+    /* padding-top: 132px;
+    margin-bottom: 78px; */
+}
+
+.cont05 h3 {
+    margin-bottom: 40px; }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    
+/*     html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+     */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }   
+
+
+/* 행사 */
+
+.cont06 {  width: 1000px; margin: 0 auto; padding-top: 200px; padding-bottom: 200px;}
+.cont06 h3 { margin-bottom: 40px; font-size: 30px; text-align: center; }
+.cont06 .cont06_all { width: 100%; display: flex;}
+.cont06 .cont06_all .cont06_1 {width: 268px; height: 521px;  position: relative;}
+.cont06 .cont06_all .cont06_1 div { position: absolute; text-align: right; bottom: 20px; right: 10px;}
+
+.cont06 .cont06_all .cont06_1 div a strong { color: #ffd86e; }
+.cont06 .cont06_all .cont06_1 div a p { color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
+
+/* 오른쪽 3개 전체 */
+
+
+
+
+
+/*  위 2개 */
+.cont06 .cont06_all .cont06_2 .cont06_02 {display: flex; margin: 0 25px;}
+.cont06 .cont06_all .cont06_2 .cont06_02 div { text-align: right;}
+.cont06 .cont06_all .cont06_2  .cont06_02  p {color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
+
+.cont06 .cont06_all .cont06_2 .cont06_02 .p01  { width: 342px; height: 245px; position: relative;}
+.cont06 .cont06_all .cont06_2 .cont06_02 .p01 div { width: 100%; position: absolute; bottom: 20px; right: 10px;}
+.cont06 .cont06_all .cont06_2 .cont06_02 .p01 div a strong { color: #ef0070 }
+
+.cont06 .cont06_all .cont06_2 .cont06_02 .g02  { width: 342px; height: 245px; position: relative; margin-left: 25px;}
+.cont06 .cont06_all .cont06_2 .cont06_02 .g02 div a strong { color: #066e14 }
+.cont06 .cont06_all .cont06_2 .cont06_02 .g02 div { width: 100%; position: absolute; bottom: 20px; right: 10px;}
+
+/* 아래 */
+.cont06 .cont06_all .cont06_2 .cont06_01   { width: 708px; height: 249px; position: relative; margin-left: 25px; margin-top: 25px;}
+.cont06 .cont06_all .cont06_2 .cont06_01 div a strong { color: #b6239d }
+.cont06 .cont06_all .cont06_2 .cont06_01 div { text-align: right;}
+.cont06 .cont06_all .cont06_2 .cont06_01 div { width: 100%; position: absolute; bottom: 20px; right: 10px;}
+.cont06 .cont06_all .cont06_2  .cont06_01  p {color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
+
+
+/* 이벤트 */
+.cont07 {
+    margin-bottom: 200px; margin-top: 200px;
+}
+
+.cont07 h3 {
+    margin-bottom: 40px; font-size: 30px; text-align: center;}
+
+
+
+
+  /* .main_visual */
+  .main_visual {
+    height: 100%;
+    width: 100%;
+    
+  }
+  .main_visual .main_v .info {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+
+
+  .main_visual .swiper-pagination {
+    --swiper-theme-color: #00aeef;
+  }
+
+
+/* 후기 */
+
+.revi_all {
+    height:918px;
+    background:url('../img/rive_bg.jpg') center center / cover no-repeat;
+    margin-bottom: 86px;
+}
+
+.revi_all .text {
+    width: 1440px;
+    margin: 0 auto;
+    /* 넓이 값만 있을 때 마진 0 auto 된다. [ 디스플레이 다른거 있으니까 잘 안되더라 ^^ ] */
+}
+.revi_all .text h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 132px;
+    margin-bottom: 78px;
+}
+
+.revi_all .text_list {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    /*  */
+    margin: 0 auto;
+}
+.revi_all .text_list .ri01 {
+    transition: 1s;
+    width: 100%;
+    width: 336px;
+    height: 422px;
+    position: relative;
+    text-align: center;
+    /* 1. 상위 폴더인 .text_list 한테 넓이값 + 중앙으로 넣는다 > 그러면 전체적으로 중간으로 이동!
+       [ 내부의 내용물은 그대로다. 중앙으로 안 간다]
+       
+       2. text_list 안에 있는 ri01 [ 내용물 ] 들에게 넓이 100% 와 text-align : center 을 주면
+       중앙으로 온다! */
+}
+
+.revi_all .text_list .ri01:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+    z-index: 9;
+}
+
+.revi_all .text_list .ri01 .title p {
+    
+    font-size: 16px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 30px 10px;
+    position: absolute;
+    line-height: 1.5;
+    background-color: white;
+    word-break:keep-all;
+}
+
+/* 개인정보 */
+.down {
+    
+    height: 215px;
+    margin: 0 auto;
+    
+}
+
+
+
+.down .sns {
+    border-top: dashed  0.3px #58585d;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* display : flex; 로 중앙정렬이 안 된다면  flex-direction: row;
+    justify-content: center; 를 넣어주자  */
+}
+
+.down .sns div {
+    margin-top: -45px;
+    /* 뒤에 선 넣는 방법.
+    img, a 도 아닌 div 자체에 마진 탑을 이용해 마이너스로 옮겨주면 된다*/
+}
+.down .sns img {
+    background-color: white;
+    border: 0.3px solid #58585d;
+    border-radius: 50%;
+    display: block;
+    margin: 20px;
+  
+}
+
+.down .text {
+    width: 1100px;
+    height: 215px;
+    margin: 40px auto;
+    display: flex;
+    justify-content:space-between;
+    font-size: 15px; }
+
+
+
+
+/* 푸터 */
+
+footer {
+    height: 260px;
+    background-color: #e8e8e8;
+}
+
+footer div {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer img:nth-of-type(1) {
+    margin: 107px 20px;
+    margin-left: 120px;
+    width: 190px;
+    height: 45px;
+}
+
+footer img:nth-of-type(2) {
+    margin: 105px 50px;
+    width: 400px;
+    height: 58px;
+}
+
+footer p {
+    margin: 90px 20px;
+    font-size: 14px;
+}

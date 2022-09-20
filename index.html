@@ -15,16 +15,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.css">
     <!-- xe아이콘 -->
 
+    
+
+
+
+    <!-- 영상 편집 -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- fancybox3 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+
+    <!-- cdnjq -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- fancybox3 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
     <link rel="stylesheet" href="lib\dist\fullpage.css" />
     <link rel="stylesheet" href="css/220919.css">
-
+     <!-- < 항상 아래에 있기 -->
     
     <style>
         
         #fp-viewing-02page header { color: #ff4141; }
 
         #section0 { background-color: #8d1919; background: url(img/main.jpg) center center / cover no-repeat; } /* id를 스타일에서 사용할 때는 앞에 # */
-        #section1 { background-color: #b62020; } 
         
         #section3 { background: url(img/grapic.jpg) center center / cover no-repeat; }
 
@@ -45,6 +70,32 @@
         
         
     </style>
+
+    <script>
+        $(function(){
+            //영상편집 슬라이드
+            var swiper = new Swiper(".mySwiper", {
+        pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+            });
+
+            //영상편집 탭메뉴
+            $('.motion_menu ul li').click(function(){
+                $('.motion_menu ul li').removeClass('on');
+                $(this).addClass('on');
+
+                $('.mySwiper').removeClass('on');
+                $('.mySwiper').eq($(this).index()).addClass('on');
+            });
+        });//jquery end
+    </script>
+
 
 
     
@@ -82,13 +133,265 @@
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1">
 			<div class="intro">
-				
+                <section class="cont01">
+                    <div class="inner">
+                        <div class="title">
+                            <h1>영상편집</h3>
+                            
+                        </div> <!-- .title end -->
+            
+                        <div class="motion_menu">
+                            <ul>
+                                <li class="on">게임</li>
+                                <li>홍보영상</li>
+                                <li>인포그래픽</li>
+                                <li>브이로그</li>
+                                <li>뮤비티저</li>
+                            </ul>
+                        </div> <!-- .motion_menu end -->
+            
+                        <!-- swiper slide -->
+                        <!-- swiper slide 1 게임-->
+            
+                          <!-- Swiper -->
+                            <div class="swiper mySwiper on"><!-- 1. 게임 -->
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide"> 
+                                    <div class="item">
+                                        <!-- 유튜브 -->
+            
+                                        <div class="pc_youtube">
+                                            <img src="img/pc_img.png" alt="pc 모니터" />
+                                            <div class="youtube">
+                                                <div>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDDvz9matN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div> <!-- .youtube end -->
+                                        </div> <!-- .pc_youtube end -->
+                                        <div class="info">
+                                            <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                            <h4>영상제목작성하는곳</h4>
+                                            
+                                            <!-- https://hangul.thefron.me/ 한글입숨 -->
+                                            <p>
+                                                컨셉 및 제작목적 : 별 무성할 묻힌 부끄러운 강아지, 별 잠, 버리었습니다. 나는 이름자 헤일 하나의 있습니다. 하나 옥 계집애들의 이름을 나는 나는 까닭입니다. 아무 어머니, 그리고 같이 별 봅니다. 위에 멀듯이, 릴케 나는 다하지 소학교 아름다운 나는 까닭입니다. 노새, 이름자 가을 내린 하나에 이름과, 까닭입니다.
+                                            </p>
+            
+                                            <ul class="text">
+                                                <li><strong>프로그램</strong> : 프리미어프로, 애프터이펙트, 마야, 포토샵, 일러스트레이터</li>
+                                                <li><strong>제작일자</strong> : 2022. 09</li>
+                                            </ul> <!-- .text end -->
+            
+                                            <ul class="btn">
+                                                <li><a href="#">영상원본보기</a></li>
+                                                <li><a href="#">기획서보기</a></li>
+                                            </ul>
+                                        </div> <!-- .info end -->
+                                    </div> <!-- .item -->
+                                </div> <!-- 1 -->
+                                <div class="swiper-slide"> 
+                                    <div class="item">
+                                        <!-- 유튜브 -->
+            
+                                        <div class="pc_youtube">
+                                            <img src="img/pc_img.png" alt="pc 모니터" />
+                                            <div class="youtube">
+                                                <div>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDDvz9matN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div> <!-- .youtube end -->
+                                        </div> <!-- .pc_youtube end -->
+                                        <div class="info">
+                                            <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                            <h4>영상제목작성하는곳</h4>
+                                            
+                                            <!-- https://hangul.thefron.me/ 한글입숨 -->
+                                            <p>
+                                                컨셉 및 제작목적 : 별 무성할 묻힌 부끄러운 강아지, 별 잠, 버리었습니다. 나는 이름자 헤일 하나의 있습니다. 하나 옥 계집애들의 이름을 나는 나는 까닭입니다. 아무 어머니, 그리고 같이 별 봅니다. 위에 멀듯이, 릴케 나는 다하지 소학교 아름다운 나는 까닭입니다. 노새, 이름자 가을 내린 하나에 이름과, 까닭입니다.
+                                            </p>
+            
+                                            <ul class="text">
+                                                <li><strong>프로그램</strong> : 프리미어프로, 애프터이펙트, 마야, 포토샵, 일러스트레이터</li>
+                                                <li><strong>제작일자</strong> : 2022. 09</li>
+                                            </ul> <!-- .text end -->
+            
+                                            <ul class="btn">
+                                                <li><a href="#">영상원본보기</a></li>
+                                                <li><a href="#">기획서보기</a></li>
+                                            </ul>
+                                        </div> <!-- .info end -->
+                                    </div> <!-- .item -->
+                                </div> <!-- 1 -->
+            
+            
+             
+                            
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!-- .swiper end 1 -->
+                            <div class="swiper mySwiper "><!-- 2. 홍보영상 -->
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide"> <!-- 1. 게임 -->
+                                    <div class="item">
+                                        <!-- 유튜브 -->
+            
+                                        <div class="pc_youtube">
+                                            <img src="img/pc_img.png" alt="pc 모니터" />
+                                            <div class="youtube">
+                                                <div>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDDvz9matN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div> <!-- .youtube end -->
+                                        </div> <!-- .pc_youtube end -->
+                                        <div class="info">
+                                            <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                            <h4>영상제목작성하는곳</h4>
+                                            
+                                            <!-- https://hangul.thefron.me/ 한글입숨 -->
+                                            <p>
+                                                컨셉 및 제작목적 : 별 무성할 묻힌 부끄러운 강아지, 별 잠, 버리었습니다. 나는 이름자 헤일 하나의 있습니다. 하나 옥 계집애들의 이름을 나는 나는 까닭입니다. 아무 어머니, 그리고 같이 별 봅니다. 위에 멀듯이, 릴케 나는 다하지 소학교 아름다운 나는 까닭입니다. 노새, 이름자 가을 내린 하나에 이름과, 까닭입니다.
+                                            </p>
+            
+                                            <ul class="text">
+                                                <li><strong>프로그램</strong> : 프리미어프로, 애프터이펙트, 마야, 포토샵, 일러스트레이터</li>
+                                                <li><strong>제작일자</strong> : 2022. 09</li>
+                                            </ul> <!-- .text end -->
+            
+                                            <ul class="btn">
+                                                <li><a href="#">영상원본보기</a></li>
+                                                <li><a href="#">기획서보기</a></li>
+                                            </ul>
+                                        </div> <!-- .info end -->
+                                    </div> <!-- .item -->
+                                </div> <!-- 1 -->
+                                <div class="swiper-slide"> <!-- 1. 게임 -->
+                                    <div class="item">
+                                        <!-- 유튜브 -->
+            
+                                        <div class="pc_youtube">
+                                            <img src="img/pc_img.png" alt="pc 모니터" />
+                                            <div class="youtube">
+                                                <div>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDDvz9matN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div> <!-- .youtube end -->
+                                        </div> <!-- .pc_youtube end -->
+                                        <div class="info">
+                                            <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                            <h4>영상제목작성하는곳</h4>
+                                            
+                                            <!-- https://hangul.thefron.me/ 한글입숨 -->
+                                            <p>
+                                                컨셉 및 제작목적 : 별 무성할 묻힌 부끄러운 강아지, 별 잠, 버리었습니다. 나는 이름자 헤일 하나의 있습니다. 하나 옥 계집애들의 이름을 나는 나는 까닭입니다. 아무 어머니, 그리고 같이 별 봅니다. 위에 멀듯이, 릴케 나는 다하지 소학교 아름다운 나는 까닭입니다. 노새, 이름자 가을 내린 하나에 이름과, 까닭입니다.
+                                            </p>
+            
+                                            <ul class="text">
+                                                <li><strong>프로그램</strong> : 프리미어프로, 애프터이펙트, 마야, 포토샵, 일러스트레이터</li>
+                                                <li><strong>제작일자</strong> : 2022. 09</li>
+                                            </ul> <!-- .text end -->
+            
+                                            <ul class="btn">
+                                                <li><a href="#">영상원본보기</a></li>
+                                                <li><a href="#">기획서보기</a></li>
+                                            </ul>
+                                        </div> <!-- .info end -->
+                                    </div> <!-- .item -->
+                                </div> <!-- 1 -->
+            
+            
+             
+                            
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!-- .swiper end 1 -->
+                            <div class="swiper mySwiper "><!-- 3. 인포그래픽 -->
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide"> <!-- 1. 게임 -->
+                                    <div class="item">
+                                        <!-- 유튜브 -->
+            
+                                        <div class="pc_youtube">
+                                            <img src="img/pc_img.png" alt="pc 모니터" />
+                                            <div class="youtube">
+                                                <div>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDDvz9matN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div> <!-- .youtube end -->
+                                        </div> <!-- .pc_youtube end -->
+                                        <div class="info">
+                                            <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                            <h4>영상제목작성하는곳</h4>
+                                            
+                                            <!-- https://hangul.thefron.me/ 한글입숨 -->
+                                            <p>
+                                                컨셉 및 제작목적 : 별 무성할 묻힌 부끄러운 강아지, 별 잠, 버리었습니다. 나는 이름자 헤일 하나의 있습니다. 하나 옥 계집애들의 이름을 나는 나는 까닭입니다. 아무 어머니, 그리고 같이 별 봅니다. 위에 멀듯이, 릴케 나는 다하지 소학교 아름다운 나는 까닭입니다. 노새, 이름자 가을 내린 하나에 이름과, 까닭입니다.
+                                            </p>
+            
+                                            <ul class="text">
+                                                <li><strong>프로그램</strong> : 프리미어프로, 애프터이펙트, 마야, 포토샵, 일러스트레이터</li>
+                                                <li><strong>제작일자</strong> : 2022. 09</li>
+                                            </ul> <!-- .text end -->
+            
+                                            <ul class="btn">
+                                                <li><a href="#">영상원본보기</a></li>
+                                                <li><a href="#">기획서보기</a></li>
+                                            </ul>
+                                        </div> <!-- .info end -->
+                                    </div> <!-- .item -->
+                                </div> <!-- 1 -->
+                                <div class="swiper-slide"> <!-- 1. 게임 -->
+                                    <div class="item">
+                                        <!-- 유튜브 -->
+            
+                                        <div class="pc_youtube">
+                                            <img src="img/pc_img.png" alt="pc 모니터" />
+                                            <div class="youtube">
+                                                <div>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDDvz9matN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div> <!-- .youtube end -->
+                                        </div> <!-- .pc_youtube end -->
+                                        <div class="info">
+                                            <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                            <h4>영상제목작성하는곳</h4>
+                                            
+                                            <!-- https://hangul.thefron.me/ 한글입숨 -->
+                                            <p>
+                                                컨셉 및 제작목적 : 별 무성할 묻힌 부끄러운 강아지, 별 잠, 버리었습니다. 나는 이름자 헤일 하나의 있습니다. 하나 옥 계집애들의 이름을 나는 나는 까닭입니다. 아무 어머니, 그리고 같이 별 봅니다. 위에 멀듯이, 릴케 나는 다하지 소학교 아름다운 나는 까닭입니다. 노새, 이름자 가을 내린 하나에 이름과, 까닭입니다.
+                                            </p>
+            
+                                            <ul class="text">
+                                                <li><strong>프로그램</strong> : 프리미어프로, 애프터이펙트, 마야, 포토샵, 일러스트레이터</li>
+                                                <li><strong>제작일자</strong> : 2022. 09</li>
+                                            </ul> <!-- .text end -->
+            
+                                            <ul class="btn">
+                                                <li><a href="#">영상원본보기</a></li>
+                                                <li><a href="#">기획서보기</a></li>
+                                            </ul>
+                                        </div> <!-- .info end -->
+                                    </div> <!-- .item -->
+                                </div> <!-- 1 -->
+            
+            
+             
+                            
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!-- .swiper end 1 -->
+            
+            
+                                </div> <!-- .inner end -->
+                            </section> <!-- .cont01 end -->
 			</div>
 		</div>
 
-	    <div class="slide" id="slide2">
-			<h1>Slide 2</h1>
-		</div>
 
 	</div>
 
@@ -200,6 +503,8 @@
 		</div>
 	</div>
 
+	
+
     <!-- 나의 소개 -->
 	<div class="section" id="section4">
 		<div class="intro">
@@ -251,6 +556,7 @@
 		</div>
 	</div>
 
+    
 <!-- 푸터 -->
     <div class="section fp-auto-height" id="footer">
         <div class="size">

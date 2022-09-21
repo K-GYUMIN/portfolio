@@ -100,25 +100,24 @@ header .h02 li {padding-left: 100px; }
 .cont01 .motion_menu {display: inline-block; /* 글이 써져있는 부분까지만 크기가 적용되도록 인라인블록을 넣었다 */ margin-top: 20px;}
 .cont01 .motion_menu ul {display: flex; align-items: center; /* 디스플레이 플렉스가 있어야 사용 가능 */ margin-bottom: 20px; background-color: #cecece; 
                             height: 40px; border-radius: 40px;}
-.cont01 .motion_menu ul li{padding: 0 30px; font-size: 14px; cursor: pointer;}
+.cont01 .motion_menu ul li{padding: 0 30px; font-size: 14px; cursor: pointer; font-family: 'GmarketSansMedium'; }
 .cont01 .motion_menu ul li.on { background-color: #fd4444; color: white; height: 100%; line-height: 40px; border-radius: 40px;}
 
 .cont01 .mySwiper {display: none;}
 .cont01 .mySwiper.on {display: block;}
-.cont01 .mySwiper .item {display: flex;}
+.cont01 .mySwiper .item {display: flex; align-items: center;}
 
-.cont01 .mySwiper .item .info {width: 45%; text-align: left; padding-left: 50px;}
-.cont01 .mySwiper .item .info > strong{display: block; margin-bottom: 20px;}
-.cont01 .mySwiper .item .info > h4{ font-size: 34px;}
-.cont01 .mySwiper .item .info > p { font-size: 20px; border-top: 1px solid #ccc; margin-top: 20px; padding-top: 20px; line-height: 1.4;}
+.cont01 .mySwiper .item .info { width: 45%; text-align: left; padding-left: 50px;  margin-bottom: 100px;}
+.cont01 .mySwiper .item .info > strong{display: block; margin-bottom: 10px; font-family: 'GmarketSansMedium'; font-weight: 500px; font-size: 16px;}
+.cont01 .mySwiper .item .info > h4{ font-size: 34px; font-family: 'GmarketSansMedium'; font-weight: 500px; }
+.cont01 .mySwiper .item .info > p { font-size: 20px; border-top: 2px solid #ff4444; margin-top: 20px; padding-top: 20px; line-height: 1.4; font-family: 'GmarketSansLight'; }
 
 .cont01 .mySwiper .item .info .text { height: 100%; margin: 20px 0 30px; line-height: 1.4; }
-.cont01 .mySwiper .item .info .text ul{}
-.cont01 .mySwiper .item .info .text ul li{}
-.cont01 .mySwiper .item .info .text ul li strong{}
+.cont01 .mySwiper .item .info .text li{ font-family: 'GmarketSansLight'; font-weight: 200px; }
+.cont01 .mySwiper .item .info .text li strong{ font-family: 'GmarketSansMedium'; font-weight: 500px; font-size: 16px; line-height: 1.5; }
 
 
-.cont01 .mySwiper .item .info .btn {display: flex; }
+.cont01 .mySwiper .item .info .btn {display: flex; font-family: 'GmarketSansMedium'; font-weight: 500px; font-size: 14px; }
 .cont01 .mySwiper .item .info .btn li {height: 40px; line-height: 40px; border-radius: 40px; background-color: #fd4444; color: #fff; margin-right: 10px;}
 .cont01 .mySwiper .item .info .btn li a {padding: 0 25px; }
 .cont01 .mySwiper .item .info .btn li:nth-of-type(2) {background-color: #fff; color: #333; border: 1px solid #ccc;}

@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김규민 포트폴리오</title>
 
-    
-
-   
-
     <!-- 이 스크립을 사용하면 수직 가운데 정렬이 된다. / 포지션을 사용하면 안 된다. -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.css">
     <!-- xe아이콘 -->
 
     
-
-
-
     <!-- 영상 편집 -->
     <!-- Link Swiper's CSS -->
     <link
@@ -41,10 +34,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 
+      <!-- 3. jquery lib -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- 4. jquery ui lib -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+      
+
     <link rel="stylesheet" href="lib\dist\fullpage.css" />
     <link rel="stylesheet" href="css/220919.css">
      <!-- < 항상 아래에 있기 -->
-    
+
     <style>
         
         #fp-viewing-02page header { color: #ff4141; }
@@ -69,50 +69,33 @@
         
         
         
-    </style>
+            </style>
 
-    <script>
-        $(function(){
-            //영상편집 슬라이드
-            var swiper = new Swiper(".mySwiper", {
-        pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        },
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        },
-            });
-
-            //영상편집 탭메뉴
-            $('.motion_menu ul li').click(function(){
-                $('.motion_menu ul li').removeClass('on');
-                $(this).addClass('on');
-
-                $('.mySwiper').removeClass('on');
-                $('.mySwiper').eq($(this).index()).addClass('on');
-            });
-        });//jquery end
+<script>
+    $(function(){
+        $('.gnb').click(function(){
+            e.preventDefault(); //a링크 방지
+        });
+        //이벤트가를 실행시켜 주겠다 괄호안에 펑션 넣어주기, 소괄호에 e를 넣으면 방지할 수 있다
+       
+        }); //jquery end
     </script>
 
-
-
-    
   
 </head>
 <body>
 
     <header>
-      <nav>
+      <nav class="gnb">
+       
         <ul class="h01">
             <li><a href="#">GUYMIN</a></li>
         </ul>
         <ul class="h02">
-            <li><a href="#">영상편집</a></li>
-            <li><a href="#">웹디자인/웹퍼블리싱</a></li>
-            <li><a href="#">2D디자인</a></li>
-            <li><a href="#">나의 소개</a></li>
+            <li><a href="#section1">영상편집</a></li>
+            <li><a href="#section2">웹디자인/웹퍼블리싱</a></li>
+            <li><a href="#section3">2D디자인</a></li>
+            <li><a href="#section">나의 소개</a></li>
         </ul>
     </nav>
     </header>
@@ -403,7 +386,7 @@
                 
                 <div class="s2all">
                     <div class="s2movie">
-                        <video  autoplay loop muted>
+                        <video class="player" autoplay loop muted>
                         <source src="img/wep01.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -442,7 +425,7 @@
 	    <div class="slide" id="slide2">
 			<div class="s2all2">
                 <div class="s2movie2">
-                    <video  autoplay loop muted>
+                    <video class="player" autoplay loop muted>
                     <source src="img/wep02.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -487,11 +470,11 @@
             <div id="content">
                 <h1>그래픽 디자인</h1>
                 <div id="bigimages">
-                    <img id="big" src="img/gd01.jpg">
+                    <img id="big" src="img/wep용.gif">
                 </div>
 
                 <div id="smallimages">
-                    <img class="small" src="img/sea.jpg" alt="작은 사진01">
+                    <img class="small" src="img/wep용.gif" alt="작은 사진01">
                     <img class="small" src="img/sea2.jpg" alt="작은 사진02">
                     <img class="small" src="img/sea3.jpg" alt="작은 사진03">
                     <img class="small" src="img/sea4.jpg" alt="작은 사진04">
@@ -542,12 +525,28 @@
                     <li>[ 멀티미디어콘텐츠제작 ] 스마트 - 영상편집&웹 <br>
                     (프리미어, 에펙, 시네마 4D )</li>
                 </ul>
-
+                
+                <ul class="list">
+                    <li>#웹제작</li>
+                    <li class="v">#영상편집</li>
+                    <li>#html</li>
+                    <li>#css</li>
+                    <li>#jquery</li>
+                    <li>#포토샵</li>
+                    <li>#일러스트</li>
+                    <li class="v">#프리미어프로</li>
+                    <li class="v">#애프터이펙트</li>
+                    <li class="v">#마야</li>
+                    <li class="v">#4D</li>
+                </ul> <!-- .list end -->
+                
                 </div> <!-- 텍스트 div -->
 
                 <div class="img">
                     <img src="img/ppt.jpg" alt="내 프로필 사진">
                 </div> <!-- 이미지 -->
+
+               
             </div>
 
             

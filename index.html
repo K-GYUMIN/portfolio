@@ -20,13 +20,12 @@
     />
 
     <!-- 그래픽 디자인 이미지 확대 -->
+        <!-- fancyboc css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- fancybox js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-
-    <!-- fancybox3 css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fancybox3 css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
 
 
@@ -76,15 +75,6 @@
     </style>
 
 
-<script>
-    $(function(){
-        $('.gnb').click(function(){
-            e.preventDefault(); //a링크 방지
-        });
-        //이벤트가를 실행시켜 주겠다 괄호안에 펑션 넣어주기, 소괄호에 e를 넣으면 방지할 수 있다
-       
-        }); //jquery end
-    </script>
 
 
 
@@ -389,6 +379,11 @@
 	</div>
 
 
+    <!-- 웹디자인 영상 내가 원하는 사이즈
+    1. 풀페이지를 사용하고 있고 높이의 경우에는 넓이와 다르게 부모만 있으면 안 되서 자식에게도 적어줘야 한다.
+        > 해당 섹션의 언어에게 높이 값 100%을 줘야했다.
+            그 후 비디오 태그에 사이즈 설정하기.  -->
+
     <!-- 웹디자인 -->
 	<div class="section" id="section2">
 	    <div class="slide" id="slide1">
@@ -484,7 +479,21 @@
             <div id="content">
                 <h1>그래픽 디자인</h1>
                 <div id="bigimages">
-                    <a href="img/wep용.gif" data-fancybox="images"><img id="big" src="img/wep용.gif"></a>
+                    <a href="img/wep용.gif" data-fancybox="images" class="on">
+                        <img id="big" src="img/wep용.gif">
+                    </a>
+                    <a href="img/sea2.jpg" data-fancybox="images">
+                        <img id="big" src="img/sea2.jpg">
+                    </a>
+                    <a href="img/sea3.jpg" data-fancybox="images">
+                        <img id="big" src="img/sea3.jpg">
+                    </a>
+                    <a href="img/sea4.jpg" data-fancybox="images">
+                        <img id="big" src="img/sea4.jpg">
+                    </a>
+                    <a href="img/wolf.jpg" data-fancybox="images">
+                        <img id="big" src="img/wolf.jpg">
+                    </a>
                     
                 </div>
 
@@ -497,7 +506,7 @@
                 </div>
             </div>
         </div>
-            <script src="change.js"></script>
+            
 		</div>
 	</div>
 
@@ -594,7 +603,7 @@
         </div>
     </div> <!-- 사이즈 -->
 </div>
-
+<script src="change.js"></script>
 <script src="lib/dist/fullpage.js"></script>
 
 

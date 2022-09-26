@@ -34,11 +34,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 
-      <!-- 3. jquery lib -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <!-- 4. jquery ui lib -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+     <!-- 클릭 시 페이지 이동 -->
+    <!-- 4. jquery ui lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       
 
     <link rel="stylesheet" href="lib\dist\fullpage.css" />
@@ -47,7 +45,7 @@
 
     <style>
         
-        #fp-viewing-02page header { color: #ff4141; }
+        #fp-viewing-02page header { color: #ff4444; }
 
         #section0 { background-color: #8d1919; background: url(img/main.jpg) center center / cover no-repeat; } /* id를 스타일에서 사용할 때는 앞에 # */
         
@@ -56,8 +54,8 @@
 
         #footer {  background: url(img/ftbg.jpg) center center / cover no-repeat; }
 
-        #fp-nav ul li a span, .fp-slidesNav ul li a span { background: #ff4141;}
-        #fp-nav ul li .fp-tooltip { color: #ff4141;}
+        #fp-nav ul li a span, .fp-slidesNav ul li a span { background: #ff4444;}
+        #fp-nav ul li .fp-tooltip { color: #ff4444;}
 
         .fp-arrow.fp-prev {border-width:0; border-color:transparent;}
         .fp-arrow.fp-prev::before { content: "\e93d"; font-family: 'xeicon'; font-size: 70px; color: #ff4444;}
@@ -65,11 +63,12 @@
         .fp-arrow.fp-next {border-width:0; border-color:0;}
         .fp-arrow.fp-next::before { content: "\e940"; font-family: 'xeicon'; font-size: 70px; color: #ff4444; }
         .fp-next { right:105px }
+        
+        
+        
+        
+    </style>
 
-        
-        
-        
-            </style>
 
 <script>
     $(function(){
@@ -80,6 +79,7 @@
        
         }); //jquery end
     </script>
+
 
   
 </head>
@@ -95,7 +95,7 @@
             <li><a href="#section1">영상편집</a></li>
             <li><a href="#section2">웹디자인/웹퍼블리싱</a></li>
             <li><a href="#section3">2D디자인</a></li>
-            <li><a href="#section">나의 소개</a></li>
+            <li><a href="#section4">나의 소개</a></li>
         </ul>
     </nav>
     </header>
@@ -382,11 +382,10 @@
     <!-- 웹디자인 -->
 	<div class="section" id="section2">
 	    <div class="slide" id="slide1">
-			<div class="intro">
-                
+			<div class="intro">    
                 <div class="s2all">
                     <div class="s2movie">
-                        <video class="player" autoplay loop muted>
+                        <video class="player"  autoplay muted loop>
                         <source src="img/wep01.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -422,42 +421,47 @@
 			</div>
 		</div>
 
-	    <div class="slide" id="slide2">
-			<div class="s2all2">
-                <div class="s2movie2">
-                    <video class="player" autoplay loop muted>
-                    <source src="img/wep02.mp4" type="video/mp4" />
-                    </video>
-                </div>
+	    <div class="slide" id="slide1">
+			<div class="intro">    
+                <div class="s2all">
+                    <div class="s2movie">
+                        <video class="player"   autoplay muted loop>
+                        <source src="img/wep02.mp4" type="video/mp4" />
+                        </video>
+                    </div>
 
-                <div class="s2text2">
-                    <h1>부산 영화의 전당</h1>
-                    <p>제작 목적, 콘셉트, 웹사이트 리뉴얼을 위해
-                        <br> 기획, 디자인, HTML, CSS언어를 활용하여
-                        <br>웹사이트를 구현했습니다.</p>
+                    <div class="s2text">
+                        <h1>부산 영화의 전당</h1>
+                        <p>제작 목적, 콘셉트, 웹사이트 리뉴얼을 위해
+                            <br> 기획, 디자인, HTML, CSS언어를 활용하여
+                            <br>웹사이트를 구현했습니다.</p>
 
-                    <ul>
-                        <li><strong>프로그램</strong></li>
-                        <li>포토샵, 일러스트, VScode</li>
-                    </ul>
-                    <ul>
-                        <li><strong>사용언어</strong></li>
-                        <li>html, css</li>
-                    </ul>
-                    <ul>
-                        <li><strong>제작일자</strong></li>
-                        <li>2022. 08. nn</li>
-                    </ul>
-
-                    <div class="but2">
                         <ul>
-                        <li><a href="#">기획서및작업과정</a></li>
-                        <li><a href="web2/index.html">사이트보기</a></li>
+                            <li><strong>프로그램</strong></li>
+                            <li>: 포토샵, 일러스트, VScode</li>
                         </ul>
+                        <ul>
+                            <li><strong>사용언어</strong></li>
+                            <li>: html, css</li>
+                        </ul>
+                        <ul>
+                            <li><strong>제작일자</strong></li>
+                            <li>: 2022. 08. nn</li>
+                        </ul>
+
+                        <div class="but">
+                            <ul>
+                            <li><a href="#">기획서및작업과정</a></li>
+                            <li><a href="web2/index.html">사이트보기</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+				
+			</div>
 		</div>
+
+	   
 
 	</div>
 

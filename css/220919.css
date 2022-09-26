@@ -93,6 +93,7 @@ header .h02 li {padding-left: 100px; }
 
 /* 영상편집 */
 
+
 .cont01 {height: 100%; width: 1440px; margin: 0 auto;}
 .cont01 .title {width: 195px; }
 .cont01 .title h1 {font-family: 'GmarketSansBold'; font-weight: 700px; font-size: 35px; border-bottom: solid 2px #ff4444; padding-bottom: 10px; }
@@ -139,7 +140,8 @@ header .h02 li {padding-left: 100px; }
 .cont04s { width: 1440px; margin: 0 auto; align-items: center; }
 .cont04s h1 { font-family: 'GmarketSansBold'; font-weight: 700px; font-size: 35px; }
 #bigimages { margin-bottom: 30px; border-bottom: solid 2px #ff4444; padding: 30px 0;}
-
+#bigimages a {display: none;}
+#bigimages .on{display: block}
 #big { width: 1244px; height: 434px; object-fit: cover;}
 .small { width: 207px; height: 128px; margin: 0 20px;  }
 

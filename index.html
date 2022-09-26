@@ -19,6 +19,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
 
+    <!-- 그래픽 디자인 이미지 확대 -->
+        <!-- fancybox js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
     <!-- fancybox3 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
@@ -81,7 +87,11 @@
     </script>
 
 
-  
+
+<!-- 카테고리 클릭시 안 되었던 이유
+1. 헤더 이동 오류 : 해당 언어에 앱솔루트가 같이 있어서. 앱솔루트 랑 픽시드 같이 있으면 안 돼 
+2. 내가 사용 중인 풀페이지는 고유 이름이 있기 때문에 그 이름으로 써야 된다. #02page-->
+
 </head>
 <body>
 
@@ -92,10 +102,10 @@
             <li><a href="#">GUYMIN</a></li>
         </ul>
         <ul class="h02">
-            <li><a href="#section1">영상편집</a></li>
-            <li><a href="#section2">웹디자인/웹퍼블리싱</a></li>
-            <li><a href="#section3">2D디자인</a></li>
-            <li><a href="#section4">나의 소개</a></li>
+            <li><a href="#02page">영상편집</a></li>
+            <li><a href="#03page">웹디자인/웹퍼블리싱</a></li>
+            <li><a href="#04page">2D디자인</a></li>
+            <li><a href="#05page">나의 소개</a></li>
         </ul>
     </nav>
     </header>
@@ -474,7 +484,8 @@
             <div id="content">
                 <h1>그래픽 디자인</h1>
                 <div id="bigimages">
-                    <img id="big" src="img/wep용.gif">
+                    <a href="img/wep용.gif" data-fancybox="images"><img id="big" src="img/wep용.gif"></a>
+                    
                 </div>
 
                 <div id="smallimages">
@@ -583,6 +594,7 @@
         </div>
     </div> <!-- 사이즈 -->
 </div>
+
 <script src="lib/dist/fullpage.js"></script>
 
 

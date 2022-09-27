@@ -64,7 +64,6 @@ header .h02 li {padding-left: 100px; }
 
 /* 웹디자인 */
 
-
 #section2 .fp-slidesContainer .fp-slide .fp-overflow { height: 100%;}
 #section2 .fp-slidesContainer .fp-slide .fp-overflow .intro { height: 100%;}
 #section2 .fp-slidesContainer .fp-slide .fp-overflow .intro .s2all { height: 100%;}
@@ -161,8 +160,8 @@ header .h02 li {padding-left: 100px; }
 #section4 .img { margin-top: 50px;}
 #section4 .img img { box-shadow: 30px 30px #ff44447c;}
 
-#section4 .s04text div .list {width: 700px; }
-#section4 .s04text div .list li {height: 50px; line-height: 50px; padding: 0 20px; background-color: rgb(202, 202, 202); border-radius: 40px; margin: 5px 10px; font-size: 16px; }
+#section4 .s04text div .list {width: 700px;  font-family: 'GmarketSansMedium'; font-weight: 500px;}
+#section4 .s04text div .list li {height: 50px; line-height: 50px; padding: 0 20px; background-color: rgb(202, 202, 202); border-radius: 40px; margin: 5px 10px; font-size: 15px; }
 #section4 .s04text div .list li.v  { background-color: #fd4444; color: white; }
 
 

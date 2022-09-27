@@ -172,5 +172,5 @@ header .h02 li {padding-left: 100px; }
 .size { width: 1440px; height: 100%; margin: 120px auto; text-align: center; }
 .size .ft01 { width:55%; display: flex; margin: 0 auto; justify-content: space-between;}
 .size .ft01 div { padding: 0 20px; border-bottom: solid 2px #ff4444; padding-bottom: 20px;  }
-.size .ft01 div h3 { padding: 15px 0; }
-.size p {padding: 20px 0; }
+.size .ft01 div h3 { padding: 15px 0; font-family: 'GmarketSansMedium'; font-weight: 500px; font-size: 20px; }
+.size p {padding: 20px 0; font-family: 'GmarketSansLight'; font-weight: 200px; font-size: 18px;}

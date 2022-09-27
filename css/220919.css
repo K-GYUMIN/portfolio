@@ -135,8 +135,8 @@ header .h02 li {padding-left: 100px; }
 
 /* 그래픽스 디자인 */
 
-#content { padding: 30px; text-align: center;}
-.cont04s { width: 1440px; margin: 0 auto; align-items: center; }
+#content {  padding: 30px; text-align: center;}
+.cont04s { width: 1440px; margin: 0 auto; align-items: center; padding-top: 50px;}
 .cont04s h1 { width: 300px; margin: 0 auto; font-family: 'GmarketSansBold'; font-weight: 700px; font-size: 35px; border-bottom: solid #ff4444 2px;
     padding-bottom: 10px;}
 #bigimages { margin-bottom: 30px; border-bottom: solid 2px #ff4444; padding: 30px 0;}
